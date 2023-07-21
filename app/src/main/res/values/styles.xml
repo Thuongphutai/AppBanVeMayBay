@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+    </style>
+
+    <!-- Định nghĩa style mới cho tiêu đề -->
+    <style name="TitleTextStyle">
+        <item name="android:textSize">20sp</item> <!-- Kích cỡ chữ 20sp -->
+        <item name="android:textColor">#FF0000</item> <!-- Màu chữ đỏ (#FF0000) -->
+        <item name="android:textAlignment">center</item> <!-- Căn giữa tiêu đề -->
+        <item name="android:background">@color/purple_500</item>
+    </style>
+</resources>

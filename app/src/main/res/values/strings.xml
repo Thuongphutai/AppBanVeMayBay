@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppBanVeMayBay</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_ragment">Home fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="booking_fragment">booking fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="about_fragment">about fragment</string>
+</resources>
