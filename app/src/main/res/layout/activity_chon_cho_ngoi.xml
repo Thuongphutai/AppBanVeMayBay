@@ -702,12 +702,14 @@
             android:layout_marginLeft="40dp"
             android:backgroundTint="@color/xanhduongdam"
             android:text="Huỷ"
+            android:textColor="@color/white"
             android:textAlignment="center" />
 
         <Button
             android:layout_marginLeft="100dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:backgroundTint="@color/xanhduongdam"
             android:text="Xác nhận ghế"
             android:textAlignment="center"/>

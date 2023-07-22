@@ -164,6 +164,7 @@
         android:id="@+id/btnThanhToanSau_ThanhToan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:backgroundTint="@color/xanhduongdam"
         android:text="Thanh Toán Sau"
         android:gravity="center"/>
