@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvThanhToanSau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Thanh Toán Sau"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/xanhbiennhat"/>
+
+    <ImageButton
+        android:id="@+id/btnBack_ThanhToanSau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/xanhbiennhat"
+        android:src="@drawable/baseline_arrow_back_24" />
+    <TextView
+        android:id="@+id/tvThongBao_ThanhToanSau"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvThanhToanSau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:text="Chào Thanh Tú ! Mã đặt chỗ FNKEOWQ
+của quý khách đang được tạm giữ.
+Thời hạn còn lại là 11 ngày 21 giờ(Hãy thanh toán trước 24h trước khi khởi hành)"/>
+    <TextView
+        android:id="@+id/tvThanhToanSau_ThanhToanSau"
+        android:layout_below="@+id/tvThongBao_ThanhToanSau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Thanh Toán Sau"/>
+    <TextView
+        android:layout_below="@+id/tvThanhToanSau_ThanhToanSau"
+        android:id="@+id/tvChiTietChuyenBay_ThanhToanSau"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textColor="@color/xanhbienvui"
+        android:text="Chi tiết chuyến bay của quý khách"/>
+    <TextView
+        android:id="@+id/tvThongTinDatCho_ThanhToanSau"
+        android:layout_below="@id/tvChiTietChuyenBay_ThanhToanSau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/xanhduongdam"
+        android:text="Thông tin đặt chỗ đang được tạm giữ"/>
+    <TextView
+        android:id="@+id/tvMaDatCho_ThanhToanSau"
+        android:layout_below="@id/tvThongTinDatCho_ThanhToanSau"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/xanhbiennhat"
+        android:text="FNKEOWQ"
+        android:textStyle="bold"
+        android:textSize="45dp"
+        android:gravity="center_horizontal|center_vertical"/>
+    <TextView
+        android:layout_below="@+id/tvMaDatCho_ThanhToanSau"
+        android:id="@+id/tvXemCachThanhToanMaDatCho_ThanhToanSau"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textColor="@color/xanhbienvui"
+        android:text="Bấm vào đây để xem cách thanh
+toán sau qua mã đặt chỗ"/>
+</RelativeLayout>
