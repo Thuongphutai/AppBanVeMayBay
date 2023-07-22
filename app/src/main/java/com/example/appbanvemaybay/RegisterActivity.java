@@ -78,7 +78,7 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(RegisterActivity.this, "Nhập Mật Khẩu", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if (password1==password2){
+                if (password1.equals(password2)){
                     mAuth.createUserWithEmailAndPassword(email, password1)
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
