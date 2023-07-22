@@ -5,6 +5,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     public ViewPagerAdapter(@NonNull FragmentManager fm, int behavior) {
@@ -22,10 +25,10 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
                 return new BookingFragment();
             case 2:
                 return new AboutFragment();
-
             default:
                 return new HomeFragment();
         }
+
 
     }
 

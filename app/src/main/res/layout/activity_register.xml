@@ -133,6 +133,7 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
         <Button
+            android:layout_margin="20dp"
             android:padding="10dp"
             android:textAlignment="center"
             android:id="@+id/btnRegister"
