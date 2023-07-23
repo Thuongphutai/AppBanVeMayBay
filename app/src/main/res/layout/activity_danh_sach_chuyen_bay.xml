@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DanhSachChuyenBayActivity">
+    <TextView
+        android:id="@+id/tvDanhSachChuyenBay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Danh Sách Chuyến Bay"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/xanhbiennhat"/>
+
+    <ImageButton
+        android:id="@+id/btnBackDanhSachChuyenBay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/xanhbiennhat"
+        android:src="@drawable/baseline_arrow_back_24" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvDanhSachChuyenBay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvDanhSachChuyenBay"/>
+
+</RelativeLayout>
