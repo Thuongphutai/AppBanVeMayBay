@@ -7,8 +7,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 
 import com.google.firebase.firestore.DocumentChange;
@@ -22,6 +26,7 @@ import java.util.ArrayList;
 
 public class DanhSachChuyenBayActivity extends AppCompatActivity {
 
+    ImageButton btnBack;
     RecyclerView recyclerView;
     ProgressDialog progressDialog;
     ArrayList<ChuyenBayModel> chuyenBayModelArrayList;
@@ -31,6 +36,15 @@ public class DanhSachChuyenBayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_danh_sach_chuyen_bay);
+        btnBack=findViewById(R.id.btnBackDanhSachChuyenBay);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(DanhSachChuyenBayActivity.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         progressDialog=new ProgressDialog(this);
         progressDialog.setCancelable(false);
