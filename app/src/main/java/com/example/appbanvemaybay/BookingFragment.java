@@ -86,8 +86,8 @@ public class BookingFragment extends Fragment {
                                     documentSnapshot.getString("ngay"),documentSnapshot.getString("price"));
                             chuyenBayModelArrayList.add(model);
                         }
-                        adapter=new ChuyenBayModel(getActivity(),chuyenBayModelArrayList);
-                        recyclerView.setAdapter(adapter);
+//                        adapter=new ChuyenBayModel(getActivity(),chuyenBayModelArrayList);
+//                        recyclerView.setAdapter(adapter);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
