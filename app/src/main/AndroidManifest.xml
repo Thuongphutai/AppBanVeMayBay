@@ -12,10 +12,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-
             android:name=".MainActivity2"
-            android:label="Airline Dalats"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Airline Dalats" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
