@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/tvChonChoNgoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Chọn chỗ ngồi"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/xanhbiennhat"/>
+
+    <ImageButton
+        android:id="@+id/btnBack_ChonChoNgoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/xanhbiennhat"
+        android:src="@drawable/baseline_arrow_back_24" />
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvChonChoNgoi">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="Còn trống"
+            android:drawableStart="@drawable/chair"
+            android:drawableTint="@color/XanhLa"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="5dp"
+            android:textSize="18dp"
+            android:drawableStart="@drawable/chair"
+            android:drawableTint="@color/vang"
+            android:text="Đã chọn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:drawablePadding="5dp"
+            android:text="Đã bị chọn/không có"
+            android:drawableStart="@drawable/chair"
+            android:drawableTint="@color/Do"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvABCDEF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal"
+        android:text="       A     B     C               D     E     F"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvABCDEF"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="7"
+        android:rowCount="11">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/chair1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair1_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair1_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/chair2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair2_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair2_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/chair3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair3_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair3_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/chair4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair4_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair4_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair4_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair4_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/chair5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair5_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair5_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair5_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/chair6_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair6_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair6_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair6_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair6_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair6_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/chair7_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair7_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair7_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair7_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair7_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair7_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/chair8_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair8_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair8_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair8_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair8_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair8_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/chair9_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair9_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair9_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair9_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair9_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair9_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/chair10_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair10_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair10_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair10_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair10_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair10_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/chair11_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair11_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair11_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair11_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair11_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chair" />
+        <ImageButton
+            android:id="@+id/chair11_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:src="@drawable/chair" />
+    </GridLayout>
+    <TextView
+        android:id="@+id/tvChuyenBayChonDatCho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginBottom="@null"
+        android:textStyle="bold"
+        android:layout_below="@id/grid"
+        android:gravity="center"
+        android:text="Chuyến bay VNAL5718 HAN-SGN"/>
+
+    <TextView
+        android:id="@+id/tvTenHanhKhach"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Tên hành khách"
+        android:textSize="20dp"
+
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvChuyenBayChonDatCho"/>
+
+    <View
+        android:layout_width="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="210dp"
+        android:layout_below="@id/tvChuyenBayChonDatCho"
+        android:background="#FF0000FF" />
+    <TextView
+        android:id="@+id/tvGheNgoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/tvChuyenBayChonDatCho"
+        android:gravity="right"
+        android:text="Tên hành khách"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvTenKH"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/tvTenHanhKhach"
+        android:text="Bùi Thị Thanh Tú"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvMaGhe"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:layout_below="@id/tvTenHanhKhach"
+        android:paddingRight="50dp"
+        android:textSize="15dp"
+        android:text="10C"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTenKH"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:backgroundTint="@color/xanhduongdam"
+            android:text="Huỷ"
+            android:textColor="@color/white"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/xanhduongdam"
+            android:text="Xác nhận ghế"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</RelativeLayout>

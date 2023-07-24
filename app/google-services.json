@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "156917541291",
+    "project_id": "appbanvemaybay",
+    "storage_bucket": "appbanvemaybay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156917541291:android:2c7ba35351546ff828caee",
+        "android_client_info": {
+          "package_name": "com.example.appbanvemaybay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156917541291-onjol166528nfui2gq05vmccdatjse1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2OZIxe0sDcg4rJC0y8wdSglqqFqHA1CQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156917541291-onjol166528nfui2gq05vmccdatjse1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

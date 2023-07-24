@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvDichVuAnUong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Dịch vụ ăn uống"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/xanhbiennhat"/>
+
+    <ImageButton
+        android:id="@+id/btnBack_DichVuAnUong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/xanhbiennhat"
+        android:src="@drawable/baseline_arrow_back_24" />
+    <LinearLayout android:orientation="vertical"
+        android:layout_below="@+id/tvDichVuAnUong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvAnUong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>
